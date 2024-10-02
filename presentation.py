@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page configuration
-st.set_page_config(page_title="Autoplito | ML-Powered Meal Count Solution", layout="centered")
+st.set_page_config(page_title="AutoPilot | ML-Powered Meal Count Solution", layout="centered")
 
 # CSS Styling
 st.markdown("""
@@ -35,18 +35,18 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Display the main title
-st.markdown('<div class="main-title">Autoplito | ML-Powered Meal Count Solution</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">AutoPilot | ML-Powered Meal Count Solution</div>', unsafe_allow_html=True)
 
 # Create Tabs for the Presentation
-tabs = st.tabs(["Overview", "Key Features", "Error Handling", "Start Autoplito"])
+tabs = st.tabs(["Overview", "Key Features", "Completion Status", "Start AutoPilot"])
 
 # Tab 1: Overview
 with tabs[0]:
     st.markdown('<div class="sub-title">Overview</div>', unsafe_allow_html=True)
     st.write("""
-    **Autoplito** is a state-of-the-art machine learning application developed for the financial team at **The Children's Rescue Fund (CRF)**. 
+    **AutoPilot** is a state-of-the-art machine learning application developed for the financial team at **The Children's Rescue Fund (CRF)**. 
     This app automatically processes handwritten meal counts from paper sheets using **Optical Character Recognition (OCR)**.
-    Autoplito extracts the data and provides **confidence scores** for each reading, allowing users to validate the accuracy of the captured information.
+    AutoPilot extracts the data and provides **confidence scores** for each reading, allowing users to validate the accuracy of the captured information.
     """)
     st.markdown('<div class="text">Key Benefits Include:</div>', unsafe_allow_html=True)
     st.write("""
@@ -58,18 +58,18 @@ with tabs[0]:
 # Tab 2: Key Features
 with tabs[1]:
     st.markdown('<div class="sub-title">Key Features</div>', unsafe_allow_html=True)
-    st.markdown('<div class="text">Autoplito offers advanced capabilities to streamline meal count processing:</div>', unsafe_allow_html=True)
+    st.markdown('<div class="text">AutoPilot offers advanced capabilities to streamline meal count processing:</div>', unsafe_allow_html=True)
     st.write("""
     1. **OCR**: Uses Optical Character Recognition to digitize handwritten meal count sheets.
     2. **Confidence Scores**: Automatically provides confidence scores for each count, helping to ensure data accuracy.
     3. **Real-Time Processing**: Processes meal count sheets quickly and provides immediate results for operational use.
     """)
 
-# Tab 3: Error Handling
+# Tab 3: Completion Status
 with tabs[2]:
-    st.markdown('<div class="sub-title">Error Handling & Monitoring</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-title">Completion Status & Monitoring</div>', unsafe_allow_html=True)
     st.write("""
-    **Autoplito** employs **AWS CloudWatch** to track and monitor errors and completion status for every processed document. 
+    **AutoPilot** employs **AWS CloudWatch** to track and monitor errors and completion status for every processed document. 
     This ensures that any issues during the OCR process, such as failed document reads or low-confidence results, are flagged and logged for review.
     """)
     st.markdown('<div class="text">CloudWatch offers the following benefits for error tracking:</div>', unsafe_allow_html=True)
@@ -81,10 +81,10 @@ with tabs[2]:
     By using CloudWatch, the team can ensure smooth operations and respond to issues before they escalate.
     """)
 
-# Tab 4: Start Autoplito
+# Tab 4: Start AutoPilot
 with tabs[3]:
-    st.markdown('<div class="sub-title">Start Autoplito</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-title">Start AutoPilot</div>', unsafe_allow_html=True)
     st.write("""
-    Ready to start using **Autoplito** for your meal count processing? Click the link below to access the application:
+    Ready to start using **AutoPilot** for your meal count processing? Click the link below to access the application:
     """)
-    st.markdown('<a href="https://crfautopilot.powerappsportals.com" class="start-link" target="_blank">Start Autoplito</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://crfautopilot.powerappsportals.com" class="start-link" target="_blank">Start AutoPilot</a>', unsafe_allow_html=True)
