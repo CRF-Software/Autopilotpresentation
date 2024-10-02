@@ -49,7 +49,7 @@ st.markdown(f'<img src="{logo_url}" class="logo">', unsafe_allow_html=True)
 st.markdown('<div class="main-title">AutoPilot | ML-Powered Meal Count Solution</div>', unsafe_allow_html=True)
 
 # Create Tabs for the Presentation
-tabs = st.tabs(["Overview", "Key Features", "Error Handling", "Start AutoPilot"])
+tabs = st.tabs(["Overview", "Key Features", "Completion Monitoring ", "Start AutoPilot"])
 
 # Tab 1: Overview
 with tabs[0]:
@@ -76,7 +76,7 @@ with tabs[1]:
     3. **Real-Time Processing**: Processes meal count sheets quickly and provides immediate results for operational use.
     """)
 
-# Tab 3: Error Handling
+# Tab 3: Completion Monitoring 
 with tabs[2]:
     st.markdown('<div class="sub-title">Completion Status & Monitoring</div>', unsafe_allow_html=True)
     st.write("""
