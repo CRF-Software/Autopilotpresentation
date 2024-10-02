@@ -28,10 +28,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Display the main title
-st.markdown('<div class="main-title">Autoplito - ML-Powered Meal Count Solution</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">Autoplito | ML-Powered Meal Count Solution</div>', unsafe_allow_html=True)
 
 # Create Tabs for the Presentation
-tabs = st.tabs(["Overview", "Key Features", "Why Choose Autoplito?", "Get Started"])
+tabs = st.tabs(["Overview", "Key Features"])
 
 # Tab 1: Overview
 with tabs[0]:
@@ -59,28 +59,3 @@ with tabs[1]:
     4. **Real-Time Processing**: Processes meal count sheets quickly and provides immediate results for operational use.
     """)
 
-# Tab 3: Why Choose Autoplito?
-with tabs[2]:
-    st.markdown('<div class="sub-title">Why Choose Autoplito?</div>', unsafe_allow_html=True)
-    st.markdown('<div class="text">Autoplito offers unmatched efficiency and accuracy for handling handwritten data at CRF:</div>', unsafe_allow_html=True)
-    st.write("""
-    - **Time-Saving**: Reduces manual data entry by 90%, allowing staff to focus on higher-value tasks.
-    - **Confidence Scores**: Empowers teams with the ability to quickly verify the reliability of data, reducing errors.
-    - **Seamless Integration**: Easily integrates with existing financial systems to streamline meal tracking and reporting.
-    - **High Accuracy**: State-of-the-art machine learning algorithms ensure precise meal count recognition, even for hard-to-read handwriting.
-    """)
-
-# Tab 4: Get Started
-with tabs[3]:
-    st.markdown('<div class="sub-title">Get Started with Autoplito</div>', unsafe_allow_html=True)
-    st.markdown('<div class="text">Interested in revolutionizing how CRF handles meal counts? Autoplito is the solution.</div>', unsafe_allow_html=True)
-    st.write("""
-    - **Request a Demo**: Reach out to schedule a live demo and see Autoplito in action.
-    - **Implementation Support**: We offer hands-on assistance to integrate Autoplito into your financial workflow.
-    - **Contact Us**: Ready to streamline your meal count processes? Contact us to discuss how Autoplito can enhance your operations.
-    """)
-
-    st.markdown("""
-    ---
-    *Note*: Autoplito is part of CRF’s ongoing commitment to using cutting-edge technology to improve operational efficiency and data accuracy.
-    """)
