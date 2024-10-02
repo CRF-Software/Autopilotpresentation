@@ -29,7 +29,7 @@ st.markdown("""
     }
     .text {
         font-size: 18px;
-        color: #0000;
+        color: #000;
     }
     .start-link {
         font-size: 20px;
