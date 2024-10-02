@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page configuration
-st.set_page_config(page_title="Autoplito | ML-Powered Meal Count Solution", layout="centered")
+st.set_page_config(page_title="Autopilot | ML-Powered Meal Count Solution", layout="centered")
 
 # CSS Styling
 st.markdown("""
@@ -29,7 +29,7 @@ st.markdown("""
     }
     .text {
         font-size: 18px;
-        color: #666;
+        color: #0000;
     }
     .start-link {
         font-size: 20px;
