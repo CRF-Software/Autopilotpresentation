@@ -3,7 +3,7 @@ import streamlit as st
 # Set page configuration
 st.set_page_config(page_title="Autoplito | ML-Powered Meal Count Solution", layout="centered")
 
-# Title Section (Global for all Tabs)
+# CSS Styling
 st.markdown("""
     <style>
     .main-title {
@@ -12,7 +12,14 @@ st.markdown("""
         text-align: center;
         color: #4A90E2;
         padding-top: 10px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
+    }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        padding-bottom: 20px;
     }
     .sub-title {
         font-size: 22px;
@@ -24,14 +31,25 @@ st.markdown("""
         font-size: 18px;
         color: #666;
     }
+    .start-link {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #4A90E2;
+        margin-top: 20px;
+    }
     </style>
 """, unsafe_allow_html=True)
+
+# Display the logo
+logo_url = "https://d161ew7sqkx7j0.cloudfront.net/public/images/logos/6698_2300_Childrens_Rescue_Fund_Logo_Final.png"
+st.markdown(f'<img src="{logo_url}" class="logo">', unsafe_allow_html=True)
 
 # Display the main title
 st.markdown('<div class="main-title">Autoplito | ML-Powered Meal Count Solution</div>', unsafe_allow_html=True)
 
 # Create Tabs for the Presentation
-tabs = st.tabs(["Overview", "Key Features"])
+tabs = st.tabs(["Overview", "Key Features", "Start Autoplito"])
 
 # Tab 1: Overview
 with tabs[0]:
@@ -59,3 +77,10 @@ with tabs[1]:
     4. **Real-Time Processing**: Processes meal count sheets quickly and provides immediate results for operational use.
     """)
 
+# Tab 3: Start Autoplito
+with tabs[2]:
+    st.markdown('<div class="sub-title">Start Autoplito</div>', unsafe_allow_html=True)
+    st.write("""
+    Ready to start using **Autoplito** for your meal count processing? Click the link below to access the application:
+    """)
+    st.markdown('<a href="https://crfautopilot.powerappsportals.com" class="start-link" target="_blank">Start Autoplito</a>', unsafe_allow_html=True)
